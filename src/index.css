@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Indie+Flower&display=swap');
+
+:not(pre, code, kbd, samp, tt) {
+	font-family: "Comic Sans MS", "Chilanka", sans-serif;
+}
+
+body {
+	overflow: hidden;
+	height: 100vh;
+	margin: 0px;
+	background-color: #f3b8c3;
+	color: #444;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#container {
+	display: inline-block;
+	border: 5px dashed purple;
+	border-radius: 15%;
+	padding: 3em;
+}
+
+#cute {
+	color: deeppink;
+}
+
+.bigger {
+	display: block;
+	margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+	font-size: 3.5em;
+	font-weight: normal;
+}
+
+.big {
+	display: block;
+	font-size: 2.25em;
+	font-weight: bold;
+	animation: marquee 2s linear infinite alternate;
+}
+
+.normal {
+	font-size: 0.44em;
+}
+
+.center {
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	border: 1px solid #c584f3;
+	border-radius: 17%;
+	padding: 0.3em 1em;
+	background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	box-shadow: inset 0px 1px 0px 0px #efdcfb;
+	font-family: "Indie Flower", "Comic Sans MS", "Chilanka", sans-serif;
+	font-size: 3.5em;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 1px 0px #9752cc;
+	cursor: pointer;
+	user-select: none;
+}
+
+.button:hover {
+	background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+	.bigger {
+		font-size: 1.75em;
+	}
+	.big {
+		font-size: 1.125em;
+	}
+	.button {
+		font-size: 1.75em;
+	}
+}
+
+@keyframes marquee {
+	from { transform: translateX(0% ); }
+	to   { transform: translateX(90%); }
+}
